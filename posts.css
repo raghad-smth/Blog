@@ -1,0 +1,20 @@
+.post-wrapper{
+    border: 2px solid black;
+    margin: 6rem;
+}
+.search-bar{
+    margin-left:3%;
+}
+.post-header{
+    margin-left:5%;
+}
+
+.post-wrapper > p {
+    margin:2rem 8%;
+}
+
+@media (max-width:870px){
+    .post-wrapper{
+        margin: 2rem;
+    }
+}

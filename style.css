@@ -1,0 +1,345 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #fff5d1;
+}
+
+@font-face {
+  font-family: "GT Super";
+  src: url("fonts/GT-Super-Display-Medium-Trial.otf") format("opentype");
+}
+
+div {
+  padding: 1.5rem;
+}
+
+h1 {
+  font-family: "GT Super", sans-serif;
+}
+
+p {
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+.subtitle {
+  font-size: 3rem;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 0.4rem;
+  margin-right: auto;
+}
+
+.nav-bar {
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  margin: 1rem 0;
+ 
+}
+.nav-bar > a {
+  font-size: 1.5rem;
+  margin-left: 3.4rem;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  position: relative;
+}
+
+.nav-bar > a::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left:0;
+    height: 0.09rem;
+    width: 0;
+    background-color:rgb(51, 51, 51);
+    transition: 0.5s;
+}
+
+.nav-bar > a:hover::after
+ {
+    width: 100%;
+}
+
+
+
+
+.hero-title {
+  font-family: "GT Super", sans-serif;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  font-size: 5rem;
+  padding-bottom: 0;
+  line-height: 6rem;
+}
+
+.fav-posts-wrapper {
+  position: relative;
+  padding: 0;
+}
+
+.custom-shape-divider-top-1724784652 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  padding: 0;
+  transform: rotate(180deg);
+  background-color: #f9f8f4;
+}
+
+.custom-shape-divider-top-1724784652 svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 173px;
+  border: none;
+}
+
+.custom-shape-divider-top-1724784652 .shape-fill {
+  fill: #fff5d1;
+}
+
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1724784652 svg {
+    width: calc(155% + 1.3px);
+    height: 92px;
+  }
+}
+
+.fav-posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 250px;
+  background-color: #f9f8f4;
+  padding: 10rem 2rem;
+}
+
+
+.fav-posts-header {
+  grid-column: 1/-1;
+  text-align: end;
+}
+
+.a-post-box {
+  display:flex;
+  flex-direction: column;
+  padding: 0;
+  height: 250px;
+  width: auto;
+  margin: 4vw 0;
+  border-radius: 50px;
+  box-shadow: 0px 10px 35px 15px rgb(51, 51, 51, 0.2);
+}
+
+.a-post-box > h2 {
+  text-align: center;
+  margin: 0;
+  background-color: #a8a188;
+  color: black;
+  padding: 1.3rem;
+}
+.a-post-box > p {
+  font-size: 1rem;
+  overflow:hidden;
+  margin: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.fisrt-Leter{
+    font-size:2.4rem;
+    line-height: 3rem;
+    letter-spacing: 0.02rem;
+}
+
+.cr-link{
+    text-align: end;    
+    padding:0.7rem 1rem;
+}
+
+.cr-link > a ,i.fa.fa-arrow-right {
+    text-decoration: none;
+    color:rgb(51, 51, 51);
+    position: relative;
+}
+i.fa.fa-arrow-right{
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.cr-link > ::after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left:0;
+    height: 0.01rem;
+    width: 100%;
+    background-color:rgb(51, 51, 51);
+    transition: 0.5s;
+}
+.cr-link > i.fa.fa-arrow-right::after{
+    top: 16.5px;
+}
+
+.latest-posts {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem 9rem;
+  padding-bottom: 4rem;
+}
+.latest-posts-header {
+  margin-bottom: 2rem;
+}
+.latest-posts > div {
+  margin: 0.5rem 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+.hrz-line {
+  grid-column: 1/-1;
+}
+hr {
+  border: 0;
+  height: 2.4px;
+  background: #000000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  background-color: #000000;
+  color: #f9f8f4;
+  padding-bottom: 5rem;
+}
+
+.footer-title {
+  font-family: "GT Super", sans-serif;
+}
+ul {
+    padding: 0;
+}
+
+i.fa{
+   font-size: 1.5rem; 
+}
+
+li > a {
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+li {
+  list-style: none;
+  margin: 0.7rem;
+  font-size: 1.2rem;
+}
+
+li > a:hover {
+  color: #b8b8b8;
+}
+
+.copy-right {
+  background-color: #000000;
+  color: #ffff;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 1450px) {
+  .fav-posts {
+    grid-template-columns: 1fr 1fr;
+    /* padding:4rem; */
+  }
+}
+@media (max-width: 720px) {
+  .nav-bar {
+    text-align: end;
+  }
+  .nav-bar > a {
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+  .hero-title {
+    margin: 2rem 0.2rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .fav-posts {
+    grid-template-columns: 1fr;
+    /* padding:4rem; */
+  }
+  .latest-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*              Conatact Style          */
+
+.contact-wrapper {
+  padding: 0;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  margin: 0;
+}
+.socials > div {
+  display: flex;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.input-style {
+  padding: 0.9rem;
+}
+#message-box {
+  height: 12em;
+}
+
+#submit-btn {
+  padding: 1.3rem;
+}
+
+.socials {
+  margin-left: 5rem;
+}
+
+.socials > ul {
+  margin: 3rem 0.2rem;
+}
+
+@media (max-width: 870px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .socials {
+    margin-left: 1rem;
+  }
+}

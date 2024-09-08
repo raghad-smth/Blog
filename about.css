@@ -1,0 +1,80 @@
+.about-me-intro{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 10rem;
+}
+
+
+.philosophy, .random-facts{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    position: relative;
+    padding:14rem;
+}
+.philosophy{
+    padding:11rem;
+    background-position: start;
+    background-image: url(imgs/philosaphy-background.png);
+    background-size: cover;
+}
+.random-facts{
+    background-position: center;
+    background-size: cover; 
+    background-image: url(imgs/random-background.png);
+}
+.about-imgs{
+    position: absolute;
+    z-index: 1;
+    height: 60vh;
+    width:auto;
+    overflow: hidden;
+}
+
+.about-lists {
+    display: flex;
+    justify-content: start;
+    padding:0;
+}
+
+.about-lists > ul{
+    margin-top:70px;
+}
+
+
+.random-header{
+    margin-left:auto;
+}
+
+.random-facts-list{
+    margin-left:auto; 
+}
+.random-svg{
+   margin-left: 38.8vw;
+   margin-right:0;
+}
+
+@media (max-width:520px){
+    .about-me-intro{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:2rem ;
+    }
+    .about-svgs{
+        width:auto;
+    }
+    .philosophy, .random-facts{
+        padding:0.5rem;
+    }
+   
+    .random-header{
+        margin-right:0;
+    }
+    .random-facts-list{
+        margin-right:0rem;
+    }
+    .random-svg{
+        margin-left: 20vw;
+     }
+     
+}
