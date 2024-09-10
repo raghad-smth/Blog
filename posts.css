@@ -1,17 +1,22 @@
-.post-wrapper{
-    border: 2px solid black;
-    margin: 6rem;
+.posts-wrapper{
+    margin: 1rem;
+    padding:10rem;
+}
+.search-bar-wraper{
+    text-align: end;
+    margin:0.4rem;
+
+    
+
 }
 .search-bar{
     margin-left:3%;
-}
-.post-header{
-    margin-left:5%;
+    padding: 0.7rem;
+    width: 20rem;
+    border-radius: 50px;
+    border: none;
 }
 
-.post-wrapper > p {
-    margin:2rem 8%;
-}
 
 @media (max-width:870px){
     .post-wrapper{
