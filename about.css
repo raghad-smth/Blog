@@ -1,22 +1,91 @@
 .about-me-intro{
     display:grid;
     grid-template-columns: 1fr 2fr;
-    margin: 2rem 10rem;
+    gap:2rem;
+    max-width:70rem;
+    position: relative;
+    top: 50%;
+    left:10%;
+    padding-bottom: 12rem;
+}
+
+.animated-p{
+     padding-top: 5rem;
+     position: relative;
+     bottom: -200px;
+     opacity: 0;
+}
+
+.animate{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        bottom: -200px;
+    }
+    70%{
+        opacity: 1;
+        bottom:15px;
+    }
+
+    85%{
+        opacity: 1;
+        bottom:10px;
+    }
+
+    100%{
+        opacity: 1;
+        bottom: 0;
+    }
 }
 
 
+.profile-img{
+    height:390px;
+    width:auto;
+}
+.profile-img > img {
+   height:100%;
+   width:100%;
+   object-fit: cover;
+   border-top-left-radius: 200px;
+   border-top-right-radius: 200px;
+   box-shadow: 4px 4px 6px rgb(0,0,0,0.7);
+   transition: 1s ease;
+}
+
+.profile-img > img:hover{
+     cursor:pointer;
+     transform:scale(1.2);
+}
+li {
+    list-style: none;
+    margin-right:1rem;
+    font-size: 1.5rem;
+}
 .philosophy, .random-facts{
     display:flex;
     flex-direction: column;
-    margin:0;
-    position: relative;
-    padding:14rem;
+    margin:0; 
+    height:50rem;
 }
 .philosophy{
-    padding:11rem;
     background-position: start;
     background-image: url(imgs/philosaphy-background.png);
     background-size: cover;
+}
+
+.philosophy-list, .random-facts-list{
+    display:grid;
+    grid-template-columns: 0.2fr 2fr;
+    gap:1rem;
+    bottom: -200px;
+    opacity: 0;
 }
 .random-facts{
     background-position: center;
@@ -25,7 +94,7 @@
 }
 .about-imgs{
     position: absolute;
-    z-index: 1;
+    /* z-index: 1; */
     height: 60vh;
     width:auto;
     overflow: hidden;
@@ -35,6 +104,8 @@
     display: flex;
     justify-content: start;
     padding:0;
+    bottom: -200px;
+    opacity: 0;
 }
 
 .about-lists > ul{
@@ -48,6 +119,7 @@
 
 .random-facts-list{
     margin-left:auto; 
+    text-align: end;
 }
 .random-svg{
    margin-left: 38.8vw;
@@ -56,9 +128,9 @@
 
 @media (max-width:520px){
     .about-me-intro{
-        display:grid;
         grid-template-columns: 1fr;
         margin:2rem ;
+        position: static;
     }
     .about-svgs{
         width:auto;

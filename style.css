@@ -34,7 +34,6 @@ p {
   padding: 1rem;
   display: flex;
   align-items: center;
-
 }
 
 .logo {
@@ -61,7 +60,7 @@ p {
   text-decoration: none;
   color: rgb(0, 0, 0);
   position: relative;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 
@@ -153,6 +152,7 @@ p {
   padding: 0;
   height: 250px;
   max-width: 60rem;
+  min-width: 20rem;
   margin: 4vw 3rem;
   border-radius: 50px;
   box-shadow: 0px 10px 35px 15px rgb(51, 51, 51, 0.2);
@@ -160,15 +160,22 @@ p {
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
+  background-color: #ffff;
+  opacity: 0;
+  transition: all 1.5s;
 }
+.show{
+  opacity: 1;
+}
+
+
 
 .post-img{
   /* background-image: url(imgs/gantavya-bhatt-oXUClTxxVFQ-unsplash.jpg); */
-  grid-row: 1 / 4;
-  grid-column: 1/2;
+   grid-row: 1 / 4;
+   grid-column: 1/2;
    padding:0;
    margin:0;
-  
 }
 
 .post-img > img {
@@ -180,7 +187,6 @@ p {
 
 .a-post-box > h2 {
   margin: 0;
-  /* color: #a8a188;  */
   padding: 1.3rem;
   grid-row: 1/3;
   grid-column: 2/4;
@@ -231,7 +237,6 @@ i.fa.fa-arrow-right{
     width: 100%;
     background-color:   #a8a188; 
     transition: 0.5s;
-   
 }
 .cr-link > i.fa.fa-arrow-right::after{
     top: 16.5px;
@@ -311,6 +316,8 @@ i.fa{
     /* padding:4rem; */
   }
 }
+
+
 @media (max-width: 720px) {
   .nav-bar {
     text-align: end;
@@ -337,6 +344,32 @@ i.fa{
     display: flex;
     flex-direction: column;
   }
+  .a-post-box{
+    min-width: 10rem;
+    margin:4rem 0.1rem;
+    grid-template-rows: 1fr 1fr 2rem 1fr 3rem;
+    height: 500px;
+  }
+  
+.post-img{
+   grid-row: 1 / 3;
+   grid-column: 1/4;
+}
+.a-post-box > h2 {
+  padding:0.3rem;
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+.a-post-box > p {
+  padding:0;
+  grid-row: 4/5;
+  grid-column: 1/4;
+}
+.cr-link{
+  grid-row: 5/6;
+  grid-column: 1/4;
+}
+
 }
 
 
