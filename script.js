@@ -48,6 +48,28 @@ const anitmatedPosts =  document.querySelectorAll('.a-post-box');
 anitmatedPosts.forEach((el) =>  observer.observe(el));
 
 
+//auto type for header 
+var autoType = document.querySelector(".auto-type");
+new Typed(autoType, {
+    strings : ["Growth", "love", "Groundness"],
+    typeSpeed : 60,
+    backSpeed: 60,
+    loop: true
+});
+
+
+document.addEventListener('scroll', function() {
+    const logoShow = document.querySelector('.logo-show');
+    const scrollY = window.scrollY; // Get the vertical scroll position
+
+    // Adjust the transform based on scroll position
+    const scaleValue = 1 + scrollY / 1000; // Scale factor
+    const opacityValue = Math.max(1 - scrollY / 1000, 0); // Fade out effect
+
+    // Apply the transform and opacity to the logo container
+    logoShow.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
+    logoShow.style.opacity = opacityValue;
+});
 // function showPhoneMenu (){
 //     navBar.style.display = 'block';
 // }

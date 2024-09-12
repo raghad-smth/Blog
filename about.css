@@ -6,7 +6,7 @@
     position: relative;
     top: 50%;
     left:10%;
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
 }
 
 .animated-p{
@@ -22,6 +22,8 @@
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
+
+
 
 @keyframes appear{
     0%{
@@ -43,6 +45,9 @@
         bottom: 0;
     }
 }
+
+
+
 
 
 .profile-img{
